@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Sharmarkelabs</string>
-    <string name="hello_message">Hello World</string>
+    <string name="hello_message">Hello world</string>
     <string name="button_message">I\'m a button</string>
+    <string name="myedittext">I\'m a edit</string>
+    <string name="hinttext">I\'m a hint</string>
 </resources>
