@@ -1,5 +1,7 @@
 package com.example.sharmarkelabs.data.ui;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
@@ -7,10 +9,7 @@ import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.Switch;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.sharmarkelabs.R;
-
 
 public class MainActivity extends AppCompatActivity {
 
