@@ -1,70 +1,48 @@
 package com.example.sharmarkelabs.data.ui;
 
+import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
+import android.widget.ImageView;
+import android.widget.Switch;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModelProvider;
 
-import android.os.Bundle;
-import android.widget.Toast;
+import com.example.sharmarkelabs.R;
 
-import com.example.sharmarkelabs.data.data.MainViewModel;
-import com.example.sharmarkelabs.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    private ActivityMainBinding variableBinding;
-    private MainViewModel model;
 
+    ImageView imgView;
+    Switch sw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        model = new ViewModelProvider(this).get(MainViewModel.class);
+        setContentView(R.layout.activity_main);
 
-        variableBinding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(variableBinding.getRoot());
+        imgView = findViewById(R.id.flagview);
+        sw = findViewById(R.id.switch1);
 
-        variableBinding.mybutton.setOnClickListener(click ->
-        {
-            model.editString.postValue(variableBinding.myedittext.getText().toString());
-        });
-        model.editString.observe(this, s -> {
-            variableBinding.text1.setText("Your edit text has: " + s);
-        });
+        sw.setOnCheckedChangeListener((btn, isChecked) -> {
+            if (isChecked) {
+                RotateAnimation rotate = new RotateAnimation(
+                        0, 360,
+                        Animation.RELATIVE_TO_SELF, 0.5f,
+                        Animation.RELATIVE_TO_SELF, 0.5f
+                );
+                rotate.setDuration(5000);
+                rotate.setRepeatCount(Animation.INFINITE);
+                rotate.setInterpolator(new LinearInterpolator());
 
-        model.isSelected.observe(this, selected -> {
-            variableBinding.CheckBox.setChecked(selected);
-            variableBinding.RadioButton.setChecked(selected);
-            variableBinding.Switch.setChecked(selected);
-
-            String message = "The value is now: " + selected;
-            Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+                imgView.startAnimation(rotate);
+            } else {
+                imgView.clearAnimation();
+            }
         });
-        variableBinding.CheckBox.setOnCheckedChangeListener((CheckBox, isChecked)-> {
-            model.isSelected.postValue(variableBinding.CheckBox.isChecked());
-        });
-
-        variableBinding.RadioButton.setOnCheckedChangeListener((RadioButton, isChecked)-> {
-            model.isSelected.postValue(variableBinding.RadioButton.isChecked());
-        });
-
-        variableBinding.Switch.setOnCheckedChangeListener((Switch, isChecked)-> {
-            model.isSelected.postValue(variableBinding.Switch.isChecked());
-        });
-
-        variableBinding.ImageView.setOnClickListener(view -> {
-            Toast.makeText(getApplicationContext(), "ImageView clicked", Toast.LENGTH_SHORT).show();
-        });
-        variableBinding.ImageButton.setOnClickListener(view -> {
-            int width = view.getWidth();
-            int height = view.getHeight();
-            String message = "The width = " + width + " and height = " + height;
-            Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
-        });
-
     }
-
 }
-
 
 
 
