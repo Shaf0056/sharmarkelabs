@@ -12,75 +12,65 @@
     android:layout_marginRight="48dp"
     tools:context="com.example.sharmarkelabs.data.ui.MainActivity">
 
-    <Button
-        android:id="@+id/mybutton1"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:text="@string/Button2"
-        android:nextFocusUp="@id/mybutton1"
-        android:nextFocusDown="@id/switch1"
-        android:nextFocusRight="@id/mybutton2"
-        android:nextFocusLeft="@id/mybutton2"
-        app:layout_constraintEnd_toStartOf="@+id/mybutton2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/mybutton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/mybutton" />
-
-
-    <Button
-        android:id="@+id/mybutton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="260dp"
-        android:text="@string/Button3"
-        android:nextFocusUp="@id/mybutton2"
-        android:nextFocusDown="@id/switch1"
-        android:nextFocusRight="@id/mybutton"
-        android:nextFocusLeft="@id/mybutton"
+        android:text="Enter your email address:"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/mybutton1"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/mybutton1" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
 
-    <Switch
-        android:id="@+id/switch1"
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="297dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:text="@string/spin_message"
-        android:nextFocusUp="@id/mybutton"
-        android:nextFocusDown="@id/mybutton"
-        app:layout_constraintBottom_toBottomOf="@+id/flagview"
+        android:text="Type your password:"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/flagview" />
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="295dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
 
     <Button
-        android:id="@+id/mybutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/Button1"
-        android:nextFocusUp="@id/mybutton"
-        android:nextFocusDown="@id/switch1"
-        android:nextFocusRight="@id/mybutton1"
-        android:nextFocusLeft="@id/mybutton2"
-        app:layout_constraintEnd_toStartOf="@+id/mybutton1"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:id="@+id/button"
+        android:layout_width="288dp"
+        android:layout_height="69dp"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/flagview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="@+id/mybutton"
-        app:layout_constraintTop_toBottomOf="@+id/mybutton"
-        app:srcCompat="@drawable/flag" />
-
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.312" />
 </androidx.constraintlayout.widget.ConstraintLayout>

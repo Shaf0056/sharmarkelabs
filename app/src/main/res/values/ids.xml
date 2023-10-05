@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="spin_message" type="id" />
+    <item name="editTextPhone1" type="id" />
+    <item name="emailtext" type="id"/>
 </resources>
