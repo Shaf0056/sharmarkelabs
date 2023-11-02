@@ -52,7 +52,7 @@ public class MainActivityTest {
 
     /**
      * This test tests if when there is an upper case missing
-     * it doesnt let the password pass
+     * it doesnt let the password passs
      */
     @Test
     public void testFindMissingUpperCase(){
