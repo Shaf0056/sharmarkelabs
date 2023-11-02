@@ -2,11 +2,4 @@
     <string name="app_name">Sharmarkelabs</string>
     <string name="hello_message">Hello world</string>
     <string name="button_message">I\'m a button</string>
-    <string name="myedittext">I\'m a edit</string>
-    <string name="hinttext">I\'m a hint</string>
-    <string name="spin_message">Spin flag</string>
-    <string name="Button1">Button 1</string>
-    <string name="Button2">Button 2</string>
-    <string name="Button3">Button 3</string>
-
 </resources>

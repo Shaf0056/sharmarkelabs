@@ -6,10 +6,6 @@ android {
     namespace 'com.example.sharmarkelabs'
     compileSdk 33
 
-    buildFeatures {
-        viewBinding true
-    }
-
     defaultConfig {
         applicationId "com.example.sharmarkelabs"
         minSdk 24
