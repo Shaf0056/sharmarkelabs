@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.example.sharmarkelabs'
-    compileSdk 33
+    compileSdk 34
 
     buildFeatures {
         viewBinding true
