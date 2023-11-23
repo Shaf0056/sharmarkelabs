@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sharmarkelabs1.0</string>
+    <string name="hello_message">Entrer le mot de passe</string>
+    <string name="button_message">connexion</string>
+</resources>
