@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sharmarkelabs1.0</string>
+    <string name="app_name">Sharmarkelabs</string>
     <string name="hello_message">Enter Password</string>
     <string name="button_message">Login</string>
 </resources>
