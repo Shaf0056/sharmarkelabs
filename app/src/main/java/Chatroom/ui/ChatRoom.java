@@ -132,7 +132,7 @@ public class ChatRoom extends AppCompatActivity {
             showDeleteConfirmationDialog();
             return true;
         } else if (item.getItemId() == R.id.item_about) {
-            Toast.makeText(this, "Version 1.0, created by YourName", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Lab 9 created by sharmarke", Toast.LENGTH_SHORT).show();
             return true;
         }
         return super.onOptionsItemSelected(item);
