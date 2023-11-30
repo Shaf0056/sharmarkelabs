@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.sharmarkelabs'
+    namespace 'com.example.sharmarkelabs10'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.sharmarkelabs"
+        applicationId "com.example.sharmarkelabs10"
         minSdk 24
         targetSdk 33
         versionCode 1

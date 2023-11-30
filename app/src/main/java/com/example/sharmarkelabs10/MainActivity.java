@@ -1,4 +1,4 @@
-package com.example.sharmarkelabs;
+package com.example.sharmarkelabs10;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -25,7 +25,7 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-import com.example.sharmarkelabs.databinding.ActivityMainBinding;
+import com.example.sharmarkelabs10.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
